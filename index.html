@@ -4,393 +4,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>S'WELL KOREA</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="css/index.css">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script>
-        window.onload = () => {
-            var swiper = new Swiper(".mySwiper-01", {
-                initialSlide: 2,
-                slidesPerView: 1.5,
-                spaceBetween: 20,
-                speed: 800,
-                slideToClickedSlide: true,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-                autoplay: {
-                    delay: 3000, // 3초마다 자동 슬라이드
-                    disableOnInteraction: false
-                },
-                loop: true
-            });
-            var swiper = new Swiper(".mySwiper-02", {
-                slidesPerView: 3,
-                spaceBetween: 20,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-            });
-            var swiper = new Swiper(".mySwiper-03", {
-                slidesPerView: 2,
-                spaceBetween: 20,
-                speed: 800,
-                slideToClickedSlide: true,
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-                autoplay: {
-                    delay: 3000, // 3초마다 자동 슬라이드
-                    disableOnInteraction: false
-                },
-                loop: true
-            });
-        }
-    </script>
+    <title>이노션에스</title>
+    <link rel="stylesheet" href="css/innocean-s.css">
 </head>
 
 <body>
-    <div class="header_fixed">
-        <header class="header">
-            <div class="top-bar">
+    <header class="header">
+        <div class="inner">
+            <h1 class="logo">
                 <a href="#">
-                    <p>+ 신규 가입 웰컴 적립금 즉시 지급 + 뉴욕에서 온 프리미엄 텀블러 S'WELL +</p>
+                    <img src="img/logo.svg" alt="">
                 </a>
-            </div><!-- .top-bar end -->
+            </h1><!-- .logo end -->
 
-            <div class="main-bar">
-                <nav class="left-nav">
-                    <ul class="gnb">
-                        <li><a href="#"><img src="img/icon-hamberger.png" alt=" "></a></li>
-                        <li><a href="#">Find Your S'well</a></li>
-                        <li><a href="#">Special</a></li>
-                        <li><a href="#">Best</a></li>
-                        <li><a href="#">New</a></li>
-                        <li><a href="#">Drink</a></li>
-                        <li><a href="#">Life</a></li>
-                    </ul><!-- .gnb end -->
-                </nav><!-- .left-nav end -->
+            <nav class="nav_pc pc">
+                <ul class="gnb">
+                    <li><a href="#" class="depth-01">ABOUTS</a></li>
+                    <li><a href="#" class="depth-01">WORKS</a></li>
+                    <li><a href="#" class="depth-01">SOLUTIONS</a></li>
+                    <li><a href="#" class="depth-01">INSIGHTS</a></li>
+                    <li><a href="#" class="depth-01">CAREERS</a></li>
+                    <li><a href="#" class="depth-01">CONTACTS</a></li>
+                </ul><!-- .gnb end -->
+            </nav><!-- .nav_pc end -->
 
-                <div class="logo">
-                    <a href="#">
-                        <img src="img/logo.png" alt="">
-                    </a>
-                </div><!-- .logo end -->
+            <ul class="util">
+                    <li><a href="#">KOR</a></li>
+                    <li><a href="#">ENG</a></li>
+            </ul><!-- .util end -->
 
-                <nav class="right-nav">
-                    <ul class="gnb">
-                        <li><a href="#">Brand</a></li>
-                        <li><a href="#">Product</a></li>
-                        <li><a href="#">CLUB S'well</a></li>
-                        <li><a href="#"><img src="img/icon-search.png" alt="검색"></a></li>
-                        <li><a href=""><img src="img/icon-shopping-bag.png" alt="장바구니"></a></li>
-                    </ul><!-- .gnb end -->
-            </div><!-- .right-nav end -->
+            <button class="nav_btn mobile">
+                <img src="img/btn_menu.svg" alt="메뉴열기">
+            </button><!-- .nav_btn end -->
 
-    </div><!-- .main-bar end -->
+            <nav class="nav_mobile mobile">
+                <button class="close_btn mobile">
+                    <img src="img/ic_close.svg" alt="메뉴닫기">
+                </button><!-- close_btn -->
+                <ul class="gnb">
+                    <li>
+                        <ul class="depth-01"><a href="#">ABOUTS</a></ul>
+                        <ul class="depth-01"><a href="#">WORKS</a></ul>
+                        <ul class="depth-01"><a href="#">SOLUTIONS</a></ul>
+                        <ul class="depth-01"><a href="#">INSIGHTS</a></ul>
+                        <ul class="depth-01"><a href="#">CAREERS</a></ul>
+                        <ul class="depth-01"><a href="#">CONTACTS</a></ul>
+                    </li>
+                </ul><!-- .gnb end -->
+            </nav><!-- .nav_mobile end -->
+        </div><!-- .inner end -->
     </header><!-- .header end -->
-    </div><!-- .header_fixed end -->
 
     <main class="main">
-        <section class="banner">
-            <!-- Swiper -->
-            <div class="swiper mySwiper-01">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide slide-01">
-                        <img src="img/banner-1.png" alt="FIND YOUR S'WELL">
-                        <div class="slide-text">
-                            <h2>FIND YOUR S’WELL</h2>
-                            <p>당신만의 ‘스웰’을 찾아보세요</p>
-                            <a href="#"><span>SHOP NOW</span></a>
-                        </div><!-- .slide-text end -->
-                    </div><!-- swiper-slide end -->
-
-
-                    <div class="swiper-slide slide-02">
-                        <img src="img/banner-2.png" alt="ROSE AGATE">
-                        <div class="slide-text">
-                            <h2>ROSE AGATE</h2>
-                            <p>피어나는 꽃을 담은 로즈 아게이트 컬렉션</p>
-                            <a href="#"><span>SHOP NOW</span></a>
-                        </div><!-- .slide-text end -->
-                    </div><!-- swiper-slide end -->
-
-                    <div class="swiper-slide slide-03">
-                        <img src="img/banner-3.gif" alt="TUMBLER XL">
-                        <div class="slide-text">
-                            <h2>TUMBLER XL</h2>
-                            <p>다양한 파스텔 컬러로 즐길 수 있는 대용량 텀블러</p>
-                            <a href="#"><span>SHOP NOW</span></a>
-                        </div><!-- .slide-text end -->
-                    </div><!-- swiper-slide end -->
-
-                    <div class="swiper-slide slide-04">
-                        <img src="img/banner-4.jpg" alt="MAKE IT YOURS">
-                        <div class="slide-text">
-                            <h2>MAKE IT YOURS</h2>
-                            <p>스웰의 특별한 각인 서비스로 나만의 텀블러 만들기</p>
-                            <a href="#"><span>SHOP NOW</span></a>
-                        </div><!-- .slide-text end -->
-                    </div><!-- .swiper slide end -->
-
-                    <div class="swiper-slide slide-05">
-                        <img src="img/banner-5.png" alt="MOON STONE">
-                        <div class="slide-text">
-                            <h2>MOON STONE</h2>
-                            <p>자연의 정제된 아름다움 문스톤 컬렉션</p>
-                            <a href="#"><span>SHOP NOW</span></a>
-                        </div><!-- .slide-text end -->
-                    </div><!-- .swiper slide end -->
-                </div><!-- .swiper-wrapper end -->
-                <div class="swiper-pagination"></div>
-            </div><!-- .mySwiper end -->
-        </section><!-- .banner end -->
-
-        <section class="collection">
-            <h2>S’WELL COLLECTION</h2>
-            <div class="list">
-                <div class="item">
-                    <a href="#">
-                        <img src="img/collection-1.png" alt="">
-                        <p>TUMBLER & MUG</p>
-                    </a>
-                </div><!-- .item end -->
-
-                <div class="item">
-                    <a href="#">
-                        <img src="img/collection-2.png" alt="">
-                        <p>BOTTLE</p>
-                    </a>
-                </div><!-- .item end -->
-
-                <div class="item">
-                    <a href="#">
-                        <img src="img/collection-3.png" alt="">
-                        <p>TRAVELER</p>
-                    </a>
-                </div><!-- .item end -->
-
-                <div class="item">
-                    <a href="#">
-                        <img src="img/collection-4.png" alt="">
-                        <p>EXPLORER</p>
-                    </a>
-                </div><!-- .item end -->
-
-                <div class="item">
-                    <a href="#">
-                        <img src="img/collection-5.png" alt="">
-                        <p>BARWARE</p>
-                    </a>
-                </div><!-- .item end -->
-
-                <div class="item">
-                    <a href="#">
-                        <img src="img/collection-6.png" alt="">
-                        <p>KITCHIN WARE</p>
-                    </a>
-                </div><!-- .item end -->
-
-            </div><!-- .list end -->
-        </section><!-- .collection end -->
-
-        <section class="find-your-swell">
-            <div class="logo">
-                <img src="img/logo.png" alt="">
-            </div><!-- .logo end -->
-            <div class="inner">
-            <!-- Swiper -->
-            <div class="swiper mySwiper-02">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="slide-info">
-                            <h2>BOTTLE</h2>
-                            <p>스웰의 첫 오리지널 제품인 보틀은 뛰어난 성능, 매끈한 실루엣, 다양한 아름다운 디자인 컬렉션으로 당신의 라이프를 특별하게 합니다.</br>우리의 일상에 수분을 공급하기에 이상적이며, 한손에 들어오는 슬림한 디자인으로 휴대하기 좋습니다.</p>
-                        </div><!-- .slide info -->
-                        <img src="img/find-your-swell-1.png" alt="">
-                    </div><!-- .swiper-slide end -->
-
-                    <div class="swiper-slide">
-                        <img src="img/find-your-swell-2.png" alt="">
-                    </div><!-- .swiper-slide end -->
-
-                    <div class="swiper-slide">
-                        <img src="img/find-your-swell-3.png" alt="">
-                    </div><!-- .swiper-slide end -->
-
-                    <div class="swiper-slide">
-                        <img src="img/find-your-swell-4.png" alt="">
-                    </div><!-- .swiper-slide end -->
-
-                </div><!-- .swiper-wrapper end -->
-                <div class="swiper-pagination"></div>
-            </div><!-- .mySwiper-02 end -->
-            </div><!-- .inner end -->
-        </section><!-- .find-your-swell end -->
-
-        <section class="best-item">
-            <h2>BEST ITEM</h2>
-            <ul class="period">
-                <li><a href="#">실시간</a></li>
-                <li><a href="#">일간</a></li>
-                <li><a href="#">주간</a></li>
-                <li><a href="#">월간</a></li>
-            </ul><!-- .period end -->
-
-            <div class="list">
-                <div class="item">
-                    <img src="img/best-item-1.jpg" alt="">
-                    <div class="best-item-text">
-                        <a href="#">
-                            <p>스웰 친환경 잇츠 투인원 도시락 636ml</br>티크우드</p>
-                            <h3>70,000</h3>
-                        </a>
-                        <span><a href="#"><ins>ADD to Cart +</ins></a></span>
-                    </div><!-- best-item-text -->
-                </div><!-- .item end -->
-
-                <div class="item">
-                    <img src="img/best-item-2.png" alt="">
-                    <div class="best-item-text">
-                        <a href="#">
-                            <p>스웰 친환경 잇츠 투인원 도시락 636ml</br>지오드로즈</p>
-                            <h3>70,000</h3>
-                        </a>
-                        <span><a href="#"><ins>ADD to Cart +</ins></a></span>
-                    </div><!-- best-item-text -->
-                </div><!-- .item end -->
-                <div class="item">
-                    <img src="img/best-item-3.jpg" alt="">
-                    <div class="best-item-text">
-                        <a href="#">
-                            <p>스웰 친환경 트래블러 470ml 지오드로즈</p>
-                            <h3>50,000</h3>
-                        </a>
-                        <span><a href="#"><ins>ADD to Cart +</ins></a></span>
-                    </div><!-- best-item-text -->
-                </div><!-- .item end -->
-            </div><!-- .list end -->
-            <span class="more-btn"><a href="#">MORE +</a></span>
-        </section><!-- .best-item end -->
-
-        <div class="animated-title">
-            <div class="track">
-                <div class="contents-wrap">
-                    <div class="content">
-                        <div class="flow-rwap">SIP WELL</div>
-                        <div class="flow-rwap">SERVE WELL</div>
-                        <div class="flow-rwap"><img src="img/official.png" alt=""></div><!-- .flow-wrap end -->
-                        <div class="flow-rwap">SIP WELL</div>
-                        <div class="flow-rwap">SERVE WELL</div>
-                        <div class="flow-rwap"><img src="img/official.png" alt=""></div><!-- .flow-wrap end -->
-                        <div class="flow-rwap">SIP WELL</div>
-                        <div class="flow-rwap">SERVE WELL</div>
-                        <div class="flow-rwap"><img src="img/official.png" alt=""></div><!-- .flow-wrap end -->
-                        <div class="flow-rwap">SIP WELL</div>
-                        <div class="flow-rwap">SERVE WELL</div>
-                        <div class="flow-rwap"><img src="img/official.png" alt=""></div><!-- .flow-wrap end -->
-                        <div class="flow-rwap">SIP WELL</div>
-                        <div class="flow-rwap">SERVE WELL</div>
-                        <div class="flow-rwap"><img src="img/official.png" alt=""></div><!-- .flow-wrap end -->
-                        <div class="flow-rwap">SIP WELL</div>
-                        <div class="flow-rwap">SERVE WELL</div>
-                        <div class="flow-rwap"><img src="img/official.png" alt=""></div><!-- .flow-wrap end -->
-                        <div class="flow-rwap">SIP WELL</div>
-                        <div class="flow-rwap">SERVE WELL</div>
-                        <div class="flow-rwap"><img src="img/official.png" alt=""></div><!-- .flow-wrap end -->
-                    </div><!-- .content end -->
-                </div><!-- contents rwap end -->
-            </div><!-- .track end -->
-        </div><!-- .animated title end -->
-
-        <section class="new-in">
-            <div class="new-in-left">
-                <div class="new-in-text">
-                    <h2>NEW</br>IN</h2>
-                    <span>TUMBLER XL</span>
-                    <p>다양한 파스텔 컬러와 두 가지 대용량 사이즈로 구성된 스웰 프리미엄 텀블러 XL</br>손에 착 감기는 손잡이와 스테인리스 빨대로 위생적이고 편리한 사용이 가능합니다.
-                    </p>
-                </div><!-- .new-in-text end -->
-
-                <div class="product-info">
-                    <img src="img/new-in-3.png" alt="">
-                    <div class="product-text">
-                        <a href="#">
-                            <p class="product-name">프리미엄 텀블러엑스라지 1.18L 하이드레인저블루</p>
-                            <p class="product-price">70,000</p>
-                        </a>
-                        <span class="add-to-cart"><a href="#"><ins>ADD to Cart +</ins></a></span>
-                    </div><!-- .product-text end -->
-                </div><!-- .product-info end -->
-            </div><!-- .new-in-left end -->
-
-            <div class="new-in-right">
-                <!-- Swiper -->
-                <div class="swiper mySwiper-03">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="img/new-in-1.gif" alt="">
-                        </div><!-- .swiper-slide end -->
-                        <div class="swiper-slide">
-                            <img src="img/new-in-2.jpg" alt="">
-                        </div><!-- .swiper-slide end -->
-                        <div class="swiper-slide">
-                            <img src="img/new-in-8.jpg" alt="">
-                        </div><!-- .swiper-slide end -->
-                        <div class="swiper-slide">
-                            <img src="img/new-in-4.jpg" alt="">
-                        </div><!-- .swiper-slide end -->
-                        <div class="swiper-slide">
-                            <img src="img/new-in-5.jpg" alt="">
-                        </div><!-- .swiper-slide end -->
-                        <div class="swiper-slide">
-                            <img src="img/new-in-6.jpg" alt="">
-                        </div><!-- .swiper-slide end -->
-                        <div class="swiper-slide">
-                            <img src="img/new-in-7.jpg" alt="">
-                        </div><!-- .swiper-slide end -->
-                        <div class="swiper-slide">
-                            <img src="img/new-in-9.jpg" alt="">
-                        </div><!-- .swiper-slide end -->
-                        <div class="swiper-slide">
-                            <img src="img/new-in-10.jpg" alt="">
-                        </div><!-- .swiper-slide end -->
-                    </div><!-- .swiper-wrapper end -->
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
-                </div><!-- mySwiper-03 end -->
-            </div><!-- .new-in-right end -->
-
-        </section><!-- .new-in end -->
-
-        <section class="promotion">
-            <h2 class="promotion-main-text">PROMOTION</h2>
-            <div class="list">
-                <div class="item-01">
-                    <a href="#">
-                        <img src="img/promotion-1.gif" alt="">
-                        <h2 class="promotion-text-01">LIMITED EDITION 20% OFF</h2>
-                        <p>고급스러운 디자인의 시즌 한정 제품들을 20% 할인가에 만나보세요.</p>
-                    </a>
-                </div><!-- .item end -->
-                <div class="item-02">
-                    <a href="#">
-                        <img src="img/promotion-2.jpg" alt="">
-                        <h2 class="promotion-text-02">FIND YOUR S’WELL</h2>
-                        <p>당신만의 ‘스웰’을 찾아보세요!</p>
-                    </a>
-                </div><!-- .item end -->
-            </div><!-- .list end -->
-            <span class="more-btn"><a href="#">MORE +</a></span>
-        </section><!-- .promotion end -->
+        <section class="main_visual">
+            <img src="img/kv.png" alt="">
+            <h2 class="main_text">We are Innovative Solutionists</h2>
+        </section><!-- .main visual end -->
     </main><!-- .main end -->
 </body>
 
